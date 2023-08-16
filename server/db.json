@@ -1,100 +1,118 @@
 {
   "sites": {
-    "site-A": [
-      {
-        "date": "2020-01-01",
-        "samples": 102,
-        "weight": 3265.1
-      },
-      {
-        "date": "2020-01-02",
-        "samples": 88,
-        "weight": 3434.0
-      },
-      {
-        "date": "2020-01-03",
-        "samples": 199,
-        "weight": 3558.0
-      },
-      {
-        "date": "2020-01-04",
-        "samples": 116,
-        "weight": 3481.1
-      },
-      {
-        "date": "2020-01-05",
-        "samples": 107,
-        "weight": 3514.2
-      },
-      {
-        "date": "2020-01-06",
-        "samples": 49,
-        "weight": 3298.3
-      },
-      {
-        "date": "2020-01-07",
-        "samples": 44,
-        "weight": 3575.6
+    "site-A": {
+      "days": [
+        {
+          "date": "2020-01-01",
+          "samples": 102,
+          "weight": 3265.1
+        },
+        {
+          "date": "2020-01-02",
+          "samples": 88,
+          "weight": 3434.0
+        },
+        {
+          "date": "2020-01-03",
+          "samples": 199,
+          "weight": 3558.0
+        },
+        {
+          "date": "2020-01-04",
+          "samples": 116,
+          "weight": 3481.1
+        },
+        {
+          "date": "2020-01-05",
+          "samples": 107,
+          "weight": 3514.2
+        },
+        {
+          "date": "2020-01-06",
+          "samples": 49,
+          "weight": 3298.3
+        },
+        {
+          "date": "2020-01-07",
+          "samples": 44,
+          "weight": 3575.6
+        }
+      ],
+      "summary": {
+        "days": 7,
+        "avgWeight": 3485.2
       }
-    ],
-    "site-B": [
-      {
-        "date": "2020-01-01",
-        "samples": 13,
-        "weight": 3602.6
-      },
-      {
-        "date": "2020-01-03",
-        "samples": 206,
-        "weight": 4433.4
-      },
-      {
-        "date": "2020-01-04",
-        "samples": 114,
-        "weight": 4170.4
-      },
-      {
-        "date": "2020-01-05",
-        "samples": 147,
-        "weight": 4074.9
-      },
-      {
-        "date": "2020-01-06",
-        "samples": 58,
-        "weight": 4165.2
-      },
-      {
-        "date": "2020-01-07",
-        "samples": 159,
-        "weight": 4565.7
+    },
+    "site-B": {
+      "days": [
+        {
+          "date": "2020-01-01",
+          "samples": 13,
+          "weight": 3602.6
+        },
+        {
+          "date": "2020-01-03",
+          "samples": 206,
+          "weight": 4433.4
+        },
+        {
+          "date": "2020-01-04",
+          "samples": 114,
+          "weight": 4170.4
+        },
+        {
+          "date": "2020-01-05",
+          "samples": 147,
+          "weight": 4074.9
+        },
+        {
+          "date": "2020-01-06",
+          "samples": 58,
+          "weight": 4165.2
+        },
+        {
+          "date": "2020-01-07",
+          "samples": 159,
+          "weight": 4565.7
+        }
+      ],
+      "summary": {
+        "days": 6,
+        "avgWeight": 4132.3
       }
-    ],
-    "site-C": [
-      {
-        "date": "2020-01-01",
-        "samples": 56,
-        "weight": 3491.8
-      },
-      {
-        "date": "2020-01-02",
-        "samples": 46,
-        "weight": 3329.6
-      },
-      {
-        "date": "2020-01-03",
-        "samples": 169,
-        "weight": 3354.3
-      },
-      {
-        "date": "2020-01-04",
-        "samples": 136,
-        "weight": 3145.7
-      },
-      {
-        "date": "2020-01-07",
-        "samples": 100,
-        "weight": 3523.4
+    },
+    "site-C": {
+      "days": [
+        {
+          "date": "2020-01-01",
+          "samples": 56,
+          "weight": 3491.8
+        },
+        {
+          "date": "2020-01-02",
+          "samples": 46,
+          "weight": 3329.6
+        },
+        {
+          "date": "2020-01-03",
+          "samples": 169,
+          "weight": 3354.3
+        },
+        {
+          "date": "2020-01-04",
+          "samples": 136,
+          "weight": 3145.7
+        },
+        {
+          "date": "2020-01-07",
+          "samples": 100,
+          "weight": 3523.4
+        }
+      ],
+      "summary": {
+        "days": 5,
+        "avgWeight": 3391.1
       }
-    ]
+    }
   }
 }
