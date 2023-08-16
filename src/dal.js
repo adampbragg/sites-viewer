@@ -9,7 +9,7 @@ export const getSites = async () => {
     const samples = sites[site].days;
     samples.map((sample) => {
       const splitDate = sample.date.split('-');
-      sample.dateDisplay = dateformat(new Date(splitDate[0], splitDate[1] - 1, splitDate[2]), 'm-d');
+      sample.dateDisplay = dateformat(new Date(splitDate[0], splitDate[1] - 1, splitDate[2]), 'm/d');
       sample.weightDisplay = Math.floor(sample.weight);
       sample.key = nanoid();
       sample.reliable = sample.samples >= 50;
