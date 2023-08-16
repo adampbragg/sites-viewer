@@ -1,22 +1,19 @@
 import { Table } from "antd";
-import { nanoid } from 'nanoid';
+import './dataTable.css';
 
 export default function DataTable({ dataSet = [] }) {
-  dataSet.map(sample => {
-    sample.key = nanoid();
-    return sample;
-  })
   const columns = [
     {
-      title: 'Date',
-      dataIndex: 'date',
+      title: 'date',
+      dataIndex: 'dateDisplay',
       key: 'date',
     },
     {
-      title: 'Weight',
-      dataIndex: 'weight',
+      title: 'weight',
+      dataIndex: 'weightDisplay',
       key: 'weight',
     },
   ];
-  return <Table dataSource={dataSet} columns={columns} />;
+  const getReliabilityClassname = sample => sample.reliable ? '' : 'unreliable';
+  return <Table dataSource={dataSet} columns={columns} rowClassName={getReliabilityClassname} />;
 }

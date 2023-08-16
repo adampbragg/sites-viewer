@@ -2,18 +2,19 @@ import { useState, useEffect } from "react";
 import Nav from "./nav"
 import DataTable from "./dataTable"
 import { getSites } from "./dal";
-import { Layout, Space } from 'antd';
+import { Layout } from 'antd';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 
 export default function Sites() {
   const [allSites, setAllSites] = useState({});
   const [siteNames, setSiteNames] = useState([]);
+  const [siteSummaries, setSiteSummaries] = useState({});
   const [siteChosen, setSiteChosen] = useState(siteNames[0]);
   const [dataSet, setDataSet] = useState(allSites[siteChosen]);
   const chosen = siteName => setSiteChosen(siteName);
 
-  useEffect(() => { setDataSet(allSites[siteChosen]) }, [siteChosen]);
+  useEffect(() => { setDataSet(allSites[siteChosen]?.days) }, [siteChosen]);
 
   useEffect(() => {
     const sitesRequester = async () => {
@@ -24,11 +25,18 @@ export default function Sites() {
     sitesRequester();
   }, []);
 
-  useEffect(() => { setSiteNames(Object.keys(allSites)) }, [allSites]);
+  useEffect(() => {
+    setSiteNames(Object.keys(allSites));
+    const newSummaries = {};
+    for (let site in allSites) {
+      newSummaries[site] = allSites[site].summary;
+    }
+    setSiteSummaries(newSummaries);
+  }, [allSites]);
 
   return (
     <Layout>
-      <Nav siteNames={siteNames} chosen={chosen} />
+      <Nav siteNames={siteNames} chosen={chosen} summaries={siteSummaries} />
       <Content>
         <DataTable dataSet={dataSet} />
       </Content>
