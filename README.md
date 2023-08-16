@@ -2,7 +2,7 @@
 ![sites-viewer screenshot](SitesViewerScreenshot.png)
 ## Running the App
 
-In the project directory, you please run the following two commands to see the running application:
+In the project directory, please run the following two commands to see the running application:
 ### `npm install`
 Installs the neccessary dependencies.
 
